@@ -45,6 +45,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public List<User> queryAll() {
+//        List<User> users = sqlSessionTemplate.selectList("com.lhx.model.User.queryAll");
         List<User> users = sqlSessionTemplate.selectList("queryAll");
         return users;
     }
